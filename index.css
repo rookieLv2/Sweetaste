@@ -1,7 +1,11 @@
-.frame{
+.top_menu{
+    color: #3f5d45;
     display: flex; /* 讓"下一層次"的項目水平排列 */
+    padding: 0;
+    margin: 20px;
 }
-.left{
+.logo{
+    font-size: 30px;
     flex: none; /* 固定配置 */
     width: 200px;
 }
@@ -9,6 +13,7 @@
     display: flex; /* 讓"下一層次"的項目水平排列 */
     justify-content: flex-end; /* 水平對齊 */
     flex: auto; /* auto 自動填滿 */
+    margin: 5px;
 }
 .iteam{
     flex: none;
@@ -16,12 +21,16 @@
     margin-right: 10px;
     text-align: center;
 }
+.shop_icon{
+    margin-right: 20px;
+}
 .welcome{
     display: flex;
     justify-content: center; /* 左右排列置中 */
     align-items: center; /* 上下排列置中 */
     height: 300px;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.327);
+    margin: 20px;
 }
 .text{
     text-align: center; /* text文字置中 */
