@@ -1,8 +1,18 @@
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "cwTeXYen", sans-serif;
+    font-size: 18px;
+    color: #3f5d45;
+}
 .top_menu{
     color: #3f5d45;
     display: flex; /* 讓"下一層次"的項目水平排列 */
     padding: 0;
     margin: 20px;
+    cursor: pointer; /* 滑鼠有點擊效果 */
 }
 .logo{
     font-size: 30px;
@@ -32,10 +42,34 @@
     background-color: rgba(128, 128, 128, 0.327);
     margin: 20px;
 }
-.text{
+.welcome_text{
     text-align: center; /* text文字置中 */
     width: 300px; 
     height: 40px;
     font-size: 30px;
     font-weight: bold;
 }
+.topic_area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* display: -webkit-box; */
+    /* display: -ms-flexbox; */
+    display: flex;
+    -webkit-box-pack: center;
+    /* -ms-flex-pack: center; */
+    justify-content: center;
+    /* -webkit-transform: translateY(-60%); */
+    /* transform: translateY(-60%); */
+    /* margin-bottom: -80px; */
+}
+.text{
+    font-size: 18px;
+    width: 259px;
+    height: 256px;
+    background: #3f5d45;
+    color: #fff;
+    opacity: 0.8;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
